@@ -4,7 +4,12 @@
 Developed and tested a ROS-based software architecture to enable autonomous navigation and exploration in a partially known or unknown environment using a TurtleBot2 mobile robot and simulator.
 
 ## Overview: 
-Developed an advanced autonomous navigation system integrating input space sampling, Extended Kalman Filter (EKF) SLAM, and real-time perception using ROS and C++.
+Developed an advanced autonomous navigation system, integrating input space sampling, AprilTags for landmark detection, Extended Kalman Filter (EKF) SLAM, and real-time perception with RGBD camera using ROS and C++.
+
+The Project.mp4 file showcases a simulation demonstrating the robot's capabilities in various aspects of autonomous navigation. The robot successfully performs landmark perception, creates occupancy grid maps, executes EKF localization, and utilizes input space sampling to navigate to the goal position. 
+* In GUI, the real odom is painted in color of black and the estimated odom is painted in color of red.
+* In GUI, the goal is set to be a darker red, and the navigation trajectory is set to be lighter blue.
+* The blue circles indicate predefined obstacles, while the small red circles represent predefined landmark positions.
 
 ## Key Components:
 1. Navigation
@@ -27,8 +32,6 @@ Developed an advanced autonomous navigation system integrating input space sampl
 
 ## Src packages Lists
 Launch, Gui, Simulator, Perception, Mapper, Localization, Navigator, Executive
-* In GUI, the real odom is painted in color of black and the estimated odom is painted in color of red.
-* In GUI, the goal is set to be a darker red, and the navigation trajectory is set to be lighter blue. 
 * Some important topic names: executive/waypoints, mobile_base/commands/velocity, sampled_trajectories.
 * Install a third-party library to main ros directory by using the command :
   git clone https://bitbucket.org/kaess/apriltags.git
@@ -49,5 +52,5 @@ Launch, Gui, Simulator, Perception, Mapper, Localization, Navigator, Executive
 * The simulation and robot test both work perfectly.
 * For running on the robot, I have set the maximum speed of the robot to be 0.3m/s to keep robot safe.
 
-##
-Acknowledgment: Special thanks to Professor Thomas M. Howard, Associate Professor of Electrical and Computer Engineering at the University of Rochester, for his guidance and support throughout the project.
+## Acknowledgment: 
+Special thanks to Professor Thomas M. Howard, Associate Professor of Electrical and Computer Engineering at the University of Rochester, for his guidance and support throughout the project.
