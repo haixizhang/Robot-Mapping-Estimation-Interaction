@@ -53,6 +53,7 @@ Launch, Gui, Simulator, Perception, Mapper, Localization, Navigator, Executive
 * In GUI, the real odom is painted in color of black and the estimated odom is painted in color of red.
 * In GUI, the goal is set to be a darker red, and the navigation trajectory is set to be lighter blue.
 * The blue circles indicate predefined obstacles, while the small red circles represent predefined landmark positions.
+* Also included keyboard control in GUI interface, like "O/I" for zoom out and zoom in, Arrow key to move center.
 ![Turtlebot2](https://github.com/haixizhang/Robot-Mapping-Estimation-Interaction/blob/main/Video/turtlebot2.png)
 * This code can be worked with Turtlebot2 for real life navigation demo, for more information about this robot, visit the [Turtlebot2 website](https://www.turtlebot.com/turtlebot2/).
 
