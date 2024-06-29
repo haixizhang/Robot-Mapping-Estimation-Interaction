@@ -6,10 +6,8 @@ Developed and tested a ROS-based software architecture to enable autonomous navi
 ## Overview: 
 Developed an advanced autonomous navigation system, integrating input space sampling, AprilTags for landmark detection, Extended Kalman Filter (EKF) SLAM, and real-time perception with RGBD camera using ROS and C++.
 
-The Project.mp4 file showcases a simulation demonstrating the robot's capabilities in various aspects of autonomous navigation. The robot successfully performs landmark perception, creates occupancy grid maps, executes EKF localization, and utilizes input space sampling to navigate to the goal position. 
-* In GUI, the real odom is painted in color of black and the estimated odom is painted in color of red.
-* In GUI, the goal is set to be a darker red, and the navigation trajectory is set to be lighter blue.
-* The blue circles indicate predefined obstacles, while the small red circles represent predefined landmark positions.
+A short demo GIF, details in below:
+![Demo GIF](https://github.com/haixizhang/Robot-Mapping-Estimation-Interaction/blob/main/Video/demo.gif)
 
 ## Key Components:
 1. Navigation
@@ -48,9 +46,19 @@ Launch, Gui, Simulator, Perception, Mapper, Localization, Navigator, Executive
 
 * The **Waypoints publisher** file is in the path of ~/src/executive/src/waypoints_publisher.cpp, feel free to change the x,y coordinates.
 
-## Expectations
+## Expectations and Demo
 * The simulation and robot test both work perfectly.
 * For running on the robot, I have set the maximum speed of the robot to be 0.3m/s to keep robot safe.
+* The Video/Project.mp4 file showcases a simulation demonstrating the robot's capabilities in various aspects of autonomous navigation. The robot successfully performs landmark perception, creates occupancy grid maps, executes EKF localization, and utilizes input space sampling to navigate to the goal position.
+[Watch the full video here](https://github.com/haixizhang/Robot-Mapping-Estimation-Interaction/blob/main/Video/Project.mp4)
+
+* In GUI, the real odom is painted in color of black and the estimated odom is painted in color of red.
+* In GUI, the goal is set to be a darker red, and the navigation trajectory is set to be lighter blue.
+* The blue circles indicate predefined obstacles, while the small red circles represent predefined landmark positions.
+
+![Turtlebot2](https://github.com/haixizhang/Robot-Mapping-Estimation-Interaction/blob/main/Video/turtlebot2.png)
+* This code can be worked with Turtlebot2 for real life navigation demo, for more information about this robot, visit the [Turtlebot2 website](https://www.turtlebot.com/turtlebot2/).
+
 
 ## Acknowledgment: 
 Special thanks to Professor Thomas M. Howard, Associate Professor of Electrical and Computer Engineering at the University of Rochester, for his guidance and support throughout the project.
