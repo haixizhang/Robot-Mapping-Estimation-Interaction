@@ -1,0 +1,13 @@
+<launch>
+<node name="landmarks_publisher" pkg="simulator" type="landmarks_publisher"/>
+
+<node name="waypoints_publisher" pkg="executive" type="waypoints_publisher"/>s
+<node name="goal_publisher_node" pkg="executive" type="goal_publisher_node" />
+
+<node name="perception_node" pkg="perception" type="perception_node"/>
+
+<node name="gui_node" pkg="gui" type="gui_node"/>
+<node name="navigation_node" pkg="navigation" type="navigation_node" launch-prefix = "gnome-terminal --"/>
+<node name="oc_grid_publisher_node" pkg="mapper" type="oc_grid_publisher_node"/>
+<node name="ekf_localization_node" pkg="localization" type="ekf_localization_node"/>
+</launch>
